@@ -26,6 +26,31 @@ const HeaderTop = () => {
               <FaInstagramSquare />
             </div>
           </div>
+          <div className="text-gray-500 text-[12px]">
+            <b>FREE SHIPPING</b> THIS WEEK ORDER OVER - $55
+          </div>
+
+          <div className="flex gap-4">
+            <select
+              className="text-gray-500 text-[12px] w-[70px]"
+              name="currency"
+              id="currency"
+            >
+              <option value="USD">USD</option>
+              <option value="INR">INR</option>
+              <option value="EUR">EUR</option>
+            </select>
+
+            <select
+              className="text-gray-500 text-[12px] w-[70px]"
+              name="language"
+              id="language"
+            >
+              <option value="EN">English</option>
+              <option value="HI">Hindi</option>
+              <option value="BO">Bodo</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
