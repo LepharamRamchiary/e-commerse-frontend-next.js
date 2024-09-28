@@ -47,7 +47,7 @@ const productDatas = [
   {
     img: "/product7.jpg",
     title: "Trendy Backpack",
-    desc: "Fashionable and functional for daily use",
+    desc: "Fashionable and functional for use",
     rating: 4,
     price: "90",
   },
