@@ -18,61 +18,13 @@ const ProductCard: React.FC<propsType> = ({
   price,
 }) => {
   const generateRating = (rating: number) => {
-    switch (rating) {
-      case 1:
-        return (
-          <div className="flex gap-1 text-[20px] text-[#FF9529]">
-            <AiFillStar />
-            <AiOutlineStar />
-            <AiOutlineStar />
-            <AiOutlineStar />
-            <AiOutlineStar />
-          </div>
-        );
-      case 2:
-        return (
-          <div className="flex gap-1 text-[20px] text-[#FF9529]">
-            <AiFillStar />
-            <AiFillStar />
-            <AiOutlineStar />
-            <AiOutlineStar />
-            <AiOutlineStar />
-          </div>
-        );
-      case 3:
-        return (
-          <div className="flex gap-1 text-[20px] text-[#FF9529]">
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiOutlineStar />
-            <AiOutlineStar />
-          </div>
-        );
-      case 4:
-        return (
-          <div className="flex gap-1 text-[20px] text-[#FF9529]">
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiOutlineStar />
-          </div>
-        );
-      case 5:
-        return (
-          <div className="flex gap-1 text-[20px] text-[#FF9529]">
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-          </div>
-        );
-
-      default:
-        return null;
-    }
+    return (
+      <div className="flex gap-1 text-[20px] text-[#FF9529]">
+        {[...Array(5)].map((_, index) => (
+          index < rating ? <AiFillStar key={index} /> : <AiOutlineStar key={index} />
+        ))}
+      </div>
+    );
   };
 
   return (
