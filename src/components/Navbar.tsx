@@ -6,9 +6,8 @@ const Navbar = () => {
     <div className="hidden lg:block">
       <div className="container">
         <div className="flex w-fit gap-10 mx-auto font-medium py-4 text-blackish">
-          <Link href="#" className="navbar__link relative uppercase">HOMe</Link>
-          <Link href="#" className="navbar__link relative uppercase">category</Link>
-          <Link href="#" className="navbar__link relative uppercase">men's</Link>
+          <Link href="/" className="navbar__link relative uppercase">HOMe</Link>
+          <Link href="/mens" className="navbar__link relative uppercase">men's</Link>
           <Link href="#" className="navbar__link relative uppercase">women's</Link>
           <Link href="#" className="navbar__link relative uppercase">jewelry</Link>
           <Link href="#" className="navbar__link relative uppercase">perfume</Link>
