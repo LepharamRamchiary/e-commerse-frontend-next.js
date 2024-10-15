@@ -10,9 +10,7 @@ const Navbar = () => {
           <Link href="/mens" className="navbar__link relative uppercase">men's</Link>
           <Link href="/womens" className="navbar__link relative uppercase">women's</Link>
           <Link href="/jewelry" className="navbar__link relative uppercase">jewelry</Link>
-          <Link href="#" className="navbar__link relative uppercase">perfume</Link>
-          <Link href="#" className="navbar__link relative uppercase">blog</Link>
-          <Link href="#" className="navbar__link relative uppercase">hot offers</Link>
+          <Link href="/blog" className="navbar__link relative uppercase">blog</Link>
         </div>
       </div>
     </div>
