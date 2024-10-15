@@ -5,47 +5,62 @@ import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 const products = [
   {
     img: "/product1.jpg", 
-    title: "Men's T-Shirt",
-    desc: "A comfortable and stylish t-shirt for men.",
-    rating: 4,
-    price: "100",
+    title: "Gold Necklace",
+    desc: "A stunning gold necklace with intricate detailing.",
+    rating: 5,
+    price: "500",
   },
   {
     img: "/product2.jpg", 
-    title: "Men's Jeans",
-    desc: "Stylish jeans suitable for all occasions.",
-    rating: 5,
-    price: "150",
+    title: "Diamond Earrings",
+    desc: "Elegant diamond earrings perfect for special occasions.",
+    rating: 4,
+    price: "750",
   },
   {
     img: "/product3.jpg", 
-    title: "Men's Sneakers",
-    desc: "Comfortable sneakers for everyday wear.",
-    rating: 3,
-    price: "80",
+    title: "Silver Bracelet",
+    desc: "A sleek silver bracelet suitable for everyday wear.",
+    rating: 4,
+    price: "300",
+  },
+  {
+    img: "/product4.jpg", 
+    title: "Pearl Ring",
+    desc: "A beautiful pearl ring that adds elegance to any outfit.",
+    rating: 5,
+    price: "400",
+  },
+  {
+    img: "/product5.jpg", 
+    title: "Platinum Pendant",
+    desc: "An exquisite platinum pendant with a minimalist design.",
+    rating: 5,
+    price: "600",
+  },
+  {
+    img: "/product6.jpg", 
+    title: "Gemstone Anklet",
+    desc: "A colorful gemstone anklet that adds a playful touch to your look.",
+    rating: 4,
+    price: "250",
+  },
+  {
+    img: "/product4.jpg", 
+    title: "Pearl Ring",
+    desc: "A beautiful pearl ring that adds elegance to any outfit.",
+    rating: 5,
+    price: "400",
   },
   {
     img: "/product1.jpg", 
-    title: "Men's T-Shirt",
-    desc: "A comfortable and stylish t-shirt for men.",
-    rating: 4,
-    price: "100",
-  },
-  {
-    img: "/product2.jpg", 
-    title: "Men's Jeans",
-    desc: "Stylish jeans suitable for all occasions.",
+    title: "Gold Necklace",
+    desc: "A stunning gold necklace with intricate detailing.",
     rating: 5,
-    price: "150",
-  },
-  {
-    img: "/product3.jpg", 
-    title: "Men's Sneakers",
-    desc: "Comfortable sneakers for everyday wear.",
-    rating: 3,
-    price: "80",
+    price: "500",
   },
 ];
+
 
 const generateRating = (rating: number) => {
   return (
@@ -75,7 +90,7 @@ const Jewelry = () => {
             </div>
 
             <div className="space-y-2 py-2">
-              <h2 className="text-accent font-medium uppercase">{product.title}</h2>
+              <h2 className="text-accent text-black font-medium uppercase">{product.title}</h2>
               <p className="text-gray-500 max-w-[150px]">{product.desc}</p>
               <div>{generateRating(product.rating)}</div>
               <div className="font-bold flex gap-4">

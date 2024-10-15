@@ -75,7 +75,7 @@ const Mens = () => {
             </div>
 
             <div className="space-y-2 py-2">
-              <h2 className="text-accent font-medium uppercase">{product.title}</h2>
+              <h2 className="text-accent text-black font-medium uppercase">{product.title}</h2>
               <p className="text-gray-500 max-w-[150px]">{product.desc}</p>
               <div>{generateRating(product.rating)}</div>
               <div className="font-bold flex gap-4">
